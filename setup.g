@@ -1,0 +1,19 @@
+Read("kstar.g");
+Read("IsGBalanced.g");
+Read("ForgetG.g");
+Read("joincells.g");
+Read("simplify.g");
+Read("replace.g");
+Read("replace2.g");
+Read("ReduceGcomplex.g");
+L:=ContractibleGcomplex("d8"); #Komplex kann hier veraendert werden
+2star:=kStar(L,1,0,2);
+#U:=2star;
+#dimensions:=List([0..3],L!.dimension);;
+#Dreh:=[[0,-1,0],[-1,0,0],[0,0,-1]]*[[-1,0,0],[0,0,-1],[0,-1,0]]*[[0,1,0],[1,0,0],[0,0,-1]];
+Dreh:=(1,2,3,4);
+r:=Dreh;
+#Spiegel:=[[0,-1,0],[-1,0,0],[0,0,-1]]*[[0,1,0],[1,0,0],[0,0,-1]];
+Spiegel:=(1,3);
+s:=Spiegel;
+#1star:=kStar(L,1,0,1);
