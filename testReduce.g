@@ -14,7 +14,7 @@ d:=d-1;
 ##################################
 
 KK:=BarycentricSubdivision(K);
-L:=ReduceGComplex(KK,d);
+L:=ReduceGComplex(KK);
 
 CK:= TensorWithIntegers(FreeGResolution(K,d+2));
 HK:=List([0..d+1],i->Homology(CK,i)); Print(HK,"\n");
